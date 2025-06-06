@@ -2,25 +2,72 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-poppins: var(--font-poppins);
+  --font-nohemi: var(--font-nohemi);
+
+  /* Custom Colors */
+  --color-primary: #210940;
+  --color-secondary: #D6B3FF;
+  --color-cardBg: #EFEEF1;
+  --color-black: #171617;
+  --color-paragraphBlack: #CCCBCD;
+  --color-paragraphWhite: #575757;
+
+  /* Custom Spacing */
+  --tracking-titleSpacingM: -0.045rem;
+  --tracking-titleSpacingD: -0.075rem;
+  --tracking-paragraphSpacingM: -0.009rem;
+  --tracking-paragraphSpacingD: -0.013rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  h1, h2, h3, h4,h5, h6 {
+    font-family: var(--font-nohemi);
+  }
+
+  p {
+    font-family: var(--font-poppins);
   }
 }
 
+
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins);
+}
+
+
+@layer components {
+  .hero-text {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: var(--tracking-titleSpacingM);
+  }
+
+  .p-hero-text {
+    color: var(--color-paragraphWhite);
+    font-size: 0.875rem;
+    letter-spacing: var(--tracking-paragraphSpacingM);
+    line-height: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .hero-text {
+      font-size: 2.5rem;
+      line-height: 100%;
+      font-weight: 400;
+      letter-spacing: var(--tracking-titleSpacingD);
+    }
+
+    .p-hero-text {
+      font-size: 1.25rem;
+      letter-spacing: var(--tracking-paragraphSpacingD);
+    }
+  }
 }

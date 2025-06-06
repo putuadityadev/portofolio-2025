@@ -1,15 +1,63 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
-});
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const nohemi = localFont({
+  src: [
+    {
+      path: "../public/fonts/Nohemi-Thin.woff",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Nohemi-ExtraLight.woff",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Nohemi-Light.woff",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Nohemi-Regular.woff",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Nohemi-Medium.woff",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Nohemi-SemiBold.woff",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Nohemi-Bold.woff",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Nohemi-ExtraBold.woff",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Nohemi-Black.woff",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-nohemi",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +73,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${poppins.variable} ${nohemi.variable} antialiased`}
       >
         {children}
       </body>
