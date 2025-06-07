@@ -1,7 +1,7 @@
 
 export default function Thoughts() {
     return (
-        <main>
+        <main className="min-h-dvh">
             Thoughts Page
         </main>
     )

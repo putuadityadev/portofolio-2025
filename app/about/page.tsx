@@ -1,7 +1,7 @@
 
 export default function About() {
     return (
-        <main>
+        <main className="min-h-dvh">
             About Page
         </main>
     )

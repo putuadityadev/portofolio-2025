@@ -2,7 +2,7 @@
 
 export default function Experiences() {
     return (
-        <main>
+        <main className="min-h-dvh">
             Experiences Page
         </main>
     )

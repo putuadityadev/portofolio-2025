@@ -2,7 +2,7 @@
 
 export default function Contact() {
     return (
-        <main>
+        <main className="min-h-dvh">
             Contact Page
         </main>
     )
