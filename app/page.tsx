@@ -9,9 +9,9 @@ export default function Home() {
       <p className="p-hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, eligendi.</p>
 
       <Button
-        variants="detail"      
+        variants="menu"      
       >
-        Explore My Works
+        Menu
 
       </Button>
 

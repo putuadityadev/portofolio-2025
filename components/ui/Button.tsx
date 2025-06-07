@@ -7,13 +7,15 @@ import { useState } from 'react';
 interface ButtonProps {
     children: React.ReactNode;
     variants: keyof typeof buttonVariants;
-    className? : string;
+    className?: string;
+    menuIcon?: string;
+    hoverIcon?: string;
 }
 
 const buttonVariants: Record <string, string> = {
     primary: 'flex justify-center items-center px-8 py-[18px] rounded-full border-[1px] border-primary font-nohemi text-xl font-normal leading-[100%] tracking-[0.025rem] hover:text-white hover:bg-primary hover:cursor-pointer transition-colors duration-300 ease-[cubic-bezier(0.85, 0, 0.15, 1)]',
-    menu: 'flex justify-center items-center px-8 py-3 rounded-full text-white bg-primary gap-2 hover:bg-secondary hover:text-primary hover:cursor-pointer font-semibold transition-all duration-300 ease-in-out',
-    detail:'w-full flex items-center justify-between pl-8 pr-2 py-2 bg-secondary rounded-full font-semibold border border-[0.5px] border-paragraphWhite/30 hover:bg-primary hover:text-secondary hover:cursor-pointer transition-all duration-300 ease-in-out',
+    menu: 'flex justify-center items-center px-8 py-3 rounded-full text-white leading-[100%] bg-primary gap-2 hover:bg-secondary hover:text-primary hover:cursor-pointer font-semibold transition-all duration-300 ease-in-out',
+    detail:'w-full flex items-center justify-between pl-8 pr-2 py-2 bg-secondary rounded-full text-sm font-semibold border border-[0.5px] border-paragraphWhite/30 hover:bg-primary hover:text-secondary hover:cursor-pointer transition-all duration-300 ease-in-out',
 }
 
 function easeOutElastic(x: number): number {
@@ -38,7 +40,7 @@ const motionVariants: Variants = {
     }
 }
 
-export default function Button ({children, variants, className}: ButtonProps) {
+export default function Button ({children, variants, className, menuIcon, hoverIcon}: ButtonProps) {
     const [isHovered, setIsHovered] = useState(false);
 
     return(
@@ -50,7 +52,67 @@ export default function Button ({children, variants, className}: ButtonProps) {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            {children}
+
+            {variants === 'menu' ? ( 
+                <div className='relative flex items-center justify-center w-full h-full overflow-hidden'>
+                    {/* Container Normal State */}
+                    <motion.div 
+                        className='flex items-center justify-center gap-2'
+                        animate={{
+                            opacity: isHovered ? 0 : 1,
+                            x: isHovered ? 50 : 0
+                        }}
+                        transition={{
+                            type: 'spring',
+                            stiffness: 400,
+                            damping: 25,
+                            duration: 0.6
+                        }}
+                    >
+                        <div className='relative w-[18px] h-[18px]'>
+                            <Image 
+                                alt="menu-icon"
+                                src={menuIcon || "/icons/menu.svg"}
+                                width={18}
+                                height={18}
+                            />
+                        </div>
+                        <div>
+                            {children}
+                        </div>
+                    </motion.div>
+                    
+                    {/* Container Arrow for Hover */}
+                    <motion.div 
+                        className='absolute inset-0 flex items-center justify-center'
+                        initial={{ opacity: 0, x: -30 }}
+                        animate={{
+                            opacity: isHovered ? 1 : 0,
+                            x: isHovered ? 0 : -30
+                        }}
+                        transition={{
+                            type: 'spring',
+                            stiffness: 400,
+                            damping: 25,
+                            duration: 0.6,
+                            delay: isHovered ? 0.1 : 0
+                        }}
+                    >
+                        <Image 
+                            alt="hover-icon"
+                            src={hoverIcon || "/icons/left-arrow.svg"}
+                            width={18}
+                            height={18}
+                        />
+                    </motion.div>
+                </div>
+            ) : (
+                <div>
+                    {children}
+                </div>
+            )}
+
+
             {variants === 'detail' && 
                 <div className="relative w-[34px] h-[34px]">
                     <Image
