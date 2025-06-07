@@ -10,11 +10,13 @@ interface ButtonProps {
     className?: string;
     menuIcon?: string;
     hoverIcon?: string;
+    onClick? : () => void;
+    isActive? : boolean;
 }
 
 const buttonVariants: Record <string, string> = {
     primary: 'flex justify-center items-center px-8 py-[18px] rounded-full border-[1px] border-primary font-nohemi text-xl font-normal leading-[100%] tracking-[0.025rem] hover:text-white hover:bg-primary hover:cursor-pointer transition-colors duration-300 ease-[cubic-bezier(0.85, 0, 0.15, 1)]',
-    menu: 'flex justify-center items-center px-8 py-3 rounded-full text-white leading-[100%] bg-primary gap-2 hover:bg-secondary hover:text-primary hover:cursor-pointer font-semibold transition-all duration-300 ease-in-out',
+    menu: 'flex justify-center items-center px-8 py-3 rounded-full text-sm text-white leading-[100%] bg-primary gap-2 hover:bg-secondary hover:text-primary hover:cursor-pointer font-semibold transition-all duration-300 ease-in-out',
     detail:'w-full flex items-center justify-between pl-8 pr-2 py-2 bg-secondary rounded-full text-sm font-semibold border border-[0.5px] border-paragraphWhite/30 hover:bg-primary hover:text-secondary hover:cursor-pointer transition-all duration-300 ease-in-out',
 }
 
@@ -40,7 +42,7 @@ const motionVariants: Variants = {
     }
 }
 
-export default function Button ({children, variants, className, menuIcon, hoverIcon}: ButtonProps) {
+export default function Button ({children, variants, className, menuIcon, hoverIcon, onClick, isActive}: ButtonProps) {
     const [isHovered, setIsHovered] = useState(false);
 
     return(
@@ -51,6 +53,7 @@ export default function Button ({children, variants, className, menuIcon, hoverI
             whileTap="tap"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
+            onClick={onClick}
         >
 
             {variants === 'menu' ? ( 
@@ -69,12 +72,12 @@ export default function Button ({children, variants, className, menuIcon, hoverI
                             duration: 0.6
                         }}
                     >
-                        <div className='relative w-[18px] h-[18px]'>
+                        <div className='relative flex justify-center w-[18px] h-[18px]'>
                             <Image 
                                 alt="menu-icon"
-                                src={menuIcon || "/icons/menu.svg"}
-                                width={18}
-                                height={18}
+                                src={menuIcon || isActive ? "/icons/close.svg" : "/icons/menu.svg"}
+                                width={isActive ? 12 : 18}
+                                height={isActive ? 12 : 18}
                             />
                         </div>
                         <div>
@@ -103,6 +106,7 @@ export default function Button ({children, variants, className, menuIcon, hoverI
                             src={hoverIcon || "/icons/left-arrow.svg"}
                             width={18}
                             height={18}
+                            className={`${isActive ? 'rotate-90 md:rotate-180' : 'rotate-270 md:rotate-0'}`}
                         />
                     </motion.div>
                 </div>
