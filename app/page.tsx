@@ -1,3 +1,4 @@
+import AboutSection from "@/components/About";
 import Cases from "@/components/Cases";
 import Hero from "@/components/Hero";
 
@@ -8,6 +9,7 @@ export default function Home() {
    <main className="min-h-dvh pt-[86px]">
       <Hero />
       <Cases />
+      <AboutSection />
    </main>
   );
 }

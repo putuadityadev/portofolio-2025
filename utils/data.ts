@@ -41,3 +41,30 @@ export const myContacts = [
         link: 'https://www.instagram.com/tu.aditya_/'
     },
 ];
+
+export const myTechStack = [
+    {
+        name: 'nextjs',
+        icon: 'nextjs.svg'
+    },
+    {
+        name: 'typescript',
+        icon: 'typescript.svg'
+    },
+    {
+        name: 'tailwindcss',
+        icon: 'tailwindcss.svg'
+    },
+    {
+        name: 'figma',
+        icon: 'figma.svg'
+    },
+    {
+        name: 'laravel',
+        icon: 'laravel.svg'
+    },
+    {
+        name: 'python',
+        icon: 'python.svg'
+    }
+]
