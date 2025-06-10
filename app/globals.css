@@ -29,6 +29,17 @@
   --section-container-tablet-margin: 16px;
 }
 
+/* Custom Selection Styling */
+::selection {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+::-moz-selection {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
 @layer base {
   h1, h2, h3, h4,h5, h6 {
     font-family: var(--font-nohemi);

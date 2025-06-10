@@ -4,7 +4,7 @@ import SubHeadline from "./ui/SubHeadline";
 
 export default function Certifications() {
     return (
-        <section className="w-full min-h-dvh mt-32 flex flex-col justify-start items-center gap-12">
+        <section className="w-full mt-32 flex flex-col justify-start items-center gap-12">
             <SubHeadline>
                 Certifications and Awwards
             </SubHeadline>

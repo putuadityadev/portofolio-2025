@@ -2,6 +2,7 @@ import AboutSection from "@/components/About";
 import Cases from "@/components/Cases";
 import Certifications from "@/components/Certifications";
 import Hero from "@/components/Hero";
+import ThoughtsSection from "@/components/Thoughts";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Cases />
       <AboutSection />
       <Certifications />
+      <ThoughtsSection />
    </main>
   );
 }

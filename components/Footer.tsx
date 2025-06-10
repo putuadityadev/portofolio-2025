@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Footer() {
     return (
-        <footer className="flex flex-col items-center gap-12 md:gap-16 mb-6">
+        <footer className="flex flex-col items-center gap-12 md:gap-16 mb-6 mt-32">
             <SubHeadline>
                 Yay! We hit the finish line. Say 🎉 hello!
             </SubHeadline>
