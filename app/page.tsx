@@ -1,5 +1,6 @@
 import AboutSection from "@/components/About";
 import Cases from "@/components/Cases";
+import Certifications from "@/components/Certifications";
 import Hero from "@/components/Hero";
 
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Cases />
       <AboutSection />
+      <Certifications />
    </main>
   );
 }

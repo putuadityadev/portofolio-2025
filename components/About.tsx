@@ -6,7 +6,7 @@ import SubHeadline from "./ui/SubHeadline";
 
 export default function AboutSection() {
     return (
-        <div className="w-full min-h-dvh mt-32 flex flex-col justify-start items-center gap-12">
+        <section className="w-full min-h-dvh mt-32 flex flex-col justify-start items-center gap-12">
             <SubHeadline>
                 About Me
             </SubHeadline>
@@ -21,7 +21,7 @@ export default function AboutSection() {
                             I Putu Aditya Satriawan
                         </Heading2>
                         <Paragraph>
-                            Web Developer
+                            Creative Developer
                         </Paragraph>
                     </div>
                     <div className="p-8 flex flex-col gap-4.5 bg-white rounded-3xl border-[0.5px] border-paragraphBlack w-full">
@@ -42,6 +42,6 @@ export default function AboutSection() {
                     </Button>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

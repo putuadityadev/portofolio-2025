@@ -67,4 +67,15 @@ export const myTechStack = [
         name: 'python',
         icon: 'python.svg'
     }
+];
+
+export const certificatesData = [
+    {
+        name: '1st Place Winner of National UI/UX Design Competition',
+        image: '/certificate-ui-ux.svg'
+    },
+    {
+        name: 'National Diploma Software Engineer with Pyhton',
+        image: '/certificate-python.svg'
+    }
 ]
