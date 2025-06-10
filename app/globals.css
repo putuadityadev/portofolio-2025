@@ -7,6 +7,7 @@
 @theme inline {
   --font-poppins: var(--font-poppins);
   --font-nohemi: var(--font-nohemi);
+  --font-nothing-you-could-do: var(--font-nothing-you-could-do);
 
   /* Custom Colors */
   --color-primary: #210940;

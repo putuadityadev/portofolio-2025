@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { Nothing_You_Could_Do } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
@@ -9,6 +10,12 @@ const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
+})
+
+const nothingYouCouldDo = Nothing_You_Could_Do({
+  variable: "--font-nothing-you-could-do",
+  subsets: ["latin"],
+  weight: ["400"]
 })
 
 const nohemi = localFont({
@@ -75,7 +82,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${nohemi.variable} antialiased`}
+        className={`${poppins.variable} ${nohemi.variable} ${nothingYouCouldDo.variable} antialiased`}
       >
         <div className="section-container">
           <Navbar />
