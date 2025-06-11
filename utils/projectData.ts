@@ -33,7 +33,7 @@ export const Projects = [
                     image: '/'
                 },
                 {
-                    name: 'waterfall',
+                    name: 'Extreme Programing',
                     image: '/'
                 }
             ],
@@ -151,9 +151,8 @@ export const Projects = [
             ],
             outcome: [
                 '40% reduction in booking process completion time',
-                '35% decrease in booking abandonment rate',
                 'Improved user satisfaction with streamlined booking flow',
-                'Increased daily booking capacity by 50%'
+                'Increased daily booking capacity'
             ],
             key_learning: [
                 {
@@ -172,10 +171,6 @@ export const Projects = [
                     name: 'Iterative Development',
                     description: 'Regular feedback and iterative improvements were key to meeting user needs and business goals.'
                 },
-                {
-                    name: 'Performance Optimization',
-                    description: 'Focusing on system performance and response times directly affected booking completion rates.'
-                }
             ]
         }
     },

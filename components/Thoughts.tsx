@@ -14,7 +14,7 @@ export default function ThoughtsSection() {
 
     const randomBlogs = getRandomBlogs();
     return(
-        <section  className="w-full min-h-dvh flex gap-12 flex-col justify-start items-center mt-32">
+        <section  className="w-full flex gap-12 flex-col justify-start items-center mt-32">
             <SubHeadline>
                 My Thoughts
             </SubHeadline>
