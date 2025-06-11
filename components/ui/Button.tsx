@@ -17,7 +17,8 @@ interface ButtonProps {
 const buttonVariants: Record <string, string> = {
     primary: 'flex justify-center items-center px-8 py-[18px] rounded-full border-[1px] border-primary font-nohemi text-sm md:text-xl font-normal leading-[100%] tracking-[0.025rem] hover:text-white hover:bg-primary hover:cursor-pointer transition-colors duration-300 ease-[cubic-bezier(0.85, 0, 0.15, 1)]',
     menu: 'flex justify-center items-center px-8 py-3 rounded-full text-sm text-white leading-[100%] bg-primary gap-2 hover:bg-secondary hover:text-primary hover:cursor-pointer font-semibold transition-all duration-300 ease-in-out',
-    detail:'w-full flex items-center justify-between pl-8 pr-2 py-2 bg-secondary rounded-full text-sm md:text-base font-semibold border border-[0.5px] border-paragraphWhite/30 hover:bg-primary hover:text-secondary hover:cursor-pointer transition-all duration-300 ease-in-out',
+    detail:'w-full flex items-center justify-between pl-8 pr-2 py-2 bg-secondary rounded-full text-sm md:text-base font-semibold border border-[0.5px] border-paragraphWhite/30 hover:bg-primary hover:text-secondary hover:cursor-pointer transition-all duration-300 ease-in-out pointer-events-auto',
+    back: 'flex items-center py-2 pl-2 pr-8 gap-[18px] bg-cardBg rounded-full border-[0.5px] border-paragraphBlack hover:cursor-pointer'
 }
 
 function easeOutElastic(x: number): number {
@@ -111,13 +112,13 @@ export default function Button ({children, variants, className, menuIcon, hoverI
                     </motion.div>
                 </div>
             ) : (
-                <div>
+                <div className={`${variants === 'back' && 'order-1'}`}>
                     {children}
                 </div>
             )}
 
 
-            {variants === 'detail' && 
+            {(variants === 'detail' || variants === 'back') &&
                 <div className="relative w-[34px] h-[34px]">
                     <Image
                         alt="Explore works icon"
@@ -126,7 +127,7 @@ export default function Button ({children, variants, className, menuIcon, hoverI
                         height={34}
                         className={`absolute inset-0 transition-opacity duration-300 ease-in-out ${
                             isHovered ? 'opacity-0' : 'opacity-100'
-                        }`}
+                        } ${variants === 'back' && 'rotate-180'}`}
                     />
                     <Image
                         alt="Explore works icon"
@@ -135,7 +136,7 @@ export default function Button ({children, variants, className, menuIcon, hoverI
                         height={34}
                         className={`absolute inset-0 transition-opacity duration-300 ease-in-out ${
                             isHovered ? 'opacity-100' : 'opacity-0'
-                        }`}
+                        } ${variants === 'back' && 'rotate-180'}`}
                     />
                 </div>
             }

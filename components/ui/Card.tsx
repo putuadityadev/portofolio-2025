@@ -3,6 +3,7 @@ import Heading2 from "./Heading2";
 import Paragraph from "./Paragraph";
 import Tag from "./Tag";
 import Button from "./Button";
+import Link from "next/link";
 
 interface CardProps {
     id: number,
@@ -21,11 +22,11 @@ export default function Card({id, title, description, images, tags, role} : Card
     console.log(id);
     
     return (
-        <div className={`flex flex-col ${
+        <Link href={`/case/${id}`} className={`flex flex-col pointer-events-none md:pointer-events-auto ${
             id === 1 
                 ? 'md:flex-row md:col-span-2 md:items-end'
                 : 'md:flex-col'
-        } justify-center items-center p-6 self-stretch gap-8 rounded-4xl bg-cardBg border-[0.5px] border-paragraphBlack h-fit`}>
+            } justify-center items-center p-6 self-stretch gap-8 rounded-4xl bg-cardBg border-[0.5px] border-paragraphBlack h-fit`}>
             {/* Image */}
             <div className={`relative overflow-hidden rounded-3xl md:h-[430px] ${
                 id === 1 
@@ -66,10 +67,12 @@ export default function Card({id, title, description, images, tags, role} : Card
                         variants="detail"
                         className="md:hidden"
                     >
-                        Read More
+                        <Link href={`/case/${id}`}>
+                            Read More
+                        </Link>
                     </Button>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
