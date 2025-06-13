@@ -22,63 +22,60 @@ export const Projects = [
             problem_statement: 'Klik Kamera was facing significant challenges with their manual booking process, resulting in a 35% booking abandonment rate. Customers found the existing system confusing and time-consuming, leading to lost business opportunities. The lack of a streamlined digital solution was causing operational inefficiencies and limiting the company\'s growth potential.',
             industry: 'Camera Industry',
             my_role: 'Fullstack Developer',
-            project_type: 'Web System',
+            project_type: 'Website',
             timeline: {
                 start: '1 Maret 2025',
                 end: '12 Mei 2025'
             },
-            framework: [
+            tools_framework: [
                 {
                     name: 'Design Thinking',
-                    image: '/'
+                    image: '/design_thinking.svg'
                 },
                 {
                     name: 'Extreme Programing',
-                    image: '/'
-                }
-            ],
-            tools: [
+                    image: '/extreme_programing.svg'
+                },
                 {
                     name: 'figma',
-                    image: '/'
+                    image: '/figma.svg'
                 },
                 {
                     name: 'trae',
-                    image: '/'
+                    image: '/trae.svg'
                 },
                 {
-                    name: 'notions',
-                    image: '/'
+                    name: 'notion',
+                    image: '/notion.svg'
                 },
                 {
                     name: 'github',
-                    image: '/'
+                    image: '/github.svg'
                 },
                 {
                     name: 'hostinger',
-                    image: '/'
-                }
-            ],
-            tech_stack: [
+                    image: '/hostinger.svg'
+                },
                 {
                     name: 'laravel',
-                    image: '/'
+                    image: '/laravel.svg'
                 },
                 {
                     name: 'react',
-                    image: '/'
+                    image: '/react.svg'
                 },
                 {
                     name: 'tailwindcss',
-                    image: '/'
+                    image: '/tailwindcss.svg'
                 },
                 {
                     name: 'shadcn',
-                    image: '/'
+                    image: '/shadcn.svg'
                 },
                 {
                     name: 'mysql',
-                    image: '/'
+                    image: '/mysql.svg'
+
                 }
             ],
             process: [
@@ -202,26 +199,18 @@ export const Projects = [
                 start: '1 April 2025',
                 end: '30 April 2025'
             },
-            framework: [
+            tools_framework: [
                 {
                     name: 'Design Thinking',
-                    image: '/'
-                }
-            ],
-            tools: [
+                    image: '/design_thinking.svg'
+                },
                 {
                     name: 'figma',
-                    image: '/'
+                    image: '/figma.svg'
                 },
                 {
                     name: 'notion',
-                    image: '/'
-                }
-            ],
-            tech_stack: [
-                {
-                    name: 'figma',
-                    image: '/'
+                    image: '/notion.svg'
                 }
             ],
             process: [
@@ -328,54 +317,52 @@ export const Projects = [
                 start: '1 Mei 2025',
                 end: 'Ongoing'
             },
-            framework: [
+            tools_framework: [
                 {
                     name: 'Design Thinking',
-                    image: '/'
+                    image: '/design_thinking.svg'
                 },
                 {
                     name: 'Agile Scrum',
-                    image: '/'
-                }
-            ],
-            tools: [
+                    image: '/agile.svg'
+                },
                 {
                     name: 'figma',
-                    image: '/'
+                    image: '/figma.svg'
                 },
                 {
                     name: 'miro',
-                    image: '/'
+                    image: '/miro.svg'
                 },
                 {
                     name: 'gitlab',
-                    image: '/'
+                    image: '/gitlab.svg'
+
                 },
                 {
                     name: 'jira',
-                    image: '/'
+                    image: '/jira.svg'
                 },
                 {
                     name: 'trae',
-                    image: '/'
+                    image: '/trae.svg'
                 },
                 {
                     name: 'notion',
-                    image: '/'
-                }
-            ],
-            tech_stack: [
+                    image: '/notion.svg'
+                },
                 {
                     name: 'react',
-                    image: '/'
+                    image: '/react.svg'
                 },
                 {
                     name: 'typescript',
-                    image: '/'
+                    image: '/typescript.svg'
                 },
                 {
                     name: 'tailwindcss',
-                    image: '/'
+                    image: '/tailwindcss.svg'
+
                 }
             ],
             process: [
