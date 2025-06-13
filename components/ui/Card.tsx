@@ -16,20 +16,21 @@ interface CardProps {
     };
     tags: string[],
     role: string,
+    isHome?: boolean
 }
 
-export default function Card({id, title, description, images, tags, role} : CardProps) {
+export default function Card({id, title, description, images, tags, role, isHome} : CardProps) {
     console.log(id);
     
     return (
         <Link href={`/case/${id}`} className={`flex flex-col pointer-events-none md:pointer-events-auto ${
-            id === 1 
+            (id === 1 || !isHome )
                 ? 'md:flex-row md:col-span-2 md:items-end'
                 : 'md:flex-col'
             } justify-center items-center p-6 self-stretch gap-8 rounded-4xl bg-cardBg border-[0.5px] border-paragraphBlack h-fit`}>
             {/* Image */}
             <div className={`relative overflow-hidden rounded-3xl md:h-[430px] ${
-                id === 1 
+                (id === 1 || !isHome) 
                     ? 'h-[245px] w-full md:w-1/2'
                     : 'h-[200px] w-full'
             }`}>
@@ -42,7 +43,7 @@ export default function Card({id, title, description, images, tags, role} : Card
             </div>
             {/* Text */}
             <div className={`flex flex-col items-start ${
-                id === 1 
+                (id === 1 || !isHome)
                     ? 'w-full md:w-1/2'
                     : 'w-full'
             }`}>
@@ -53,7 +54,7 @@ export default function Card({id, title, description, images, tags, role} : Card
                             {title}
                         </Heading2>
                     </div>
-                    <Paragraph className={`${id !== 1 && 'md:hidden'}`}>
+                    <Paragraph className={`${(id !== 1 && isHome) && 'md:hidden'}`}>
                         {description}
                     </Paragraph>
                     <div className="flex flex-wrap items-center gap-2">
@@ -65,7 +66,7 @@ export default function Card({id, title, description, images, tags, role} : Card
                     </div>
                     <Button
                         variants="detail"
-                        className="md:hidden"
+                        className={`${isHome && 'md:hidden'}`}
                     >
                         <Link href={`/case/${id}`}>
                             Read More

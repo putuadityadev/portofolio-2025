@@ -20,6 +20,7 @@ export default function Cases() {
                         images={project.images}
                         tags={project.tags}
                         role={project.detail.my_role}
+                        isHome = {true}
                     />
                 ))}
             </div>

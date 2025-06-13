@@ -6,10 +6,6 @@ export const navLinks = [
         link: '/case'
     },
     {
-        name: 'Experiences',
-        link: '/experiences'
-    },
-    {
         name: 'Thoughts',
         link: '/thoughts'
     },
