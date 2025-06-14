@@ -28,6 +28,7 @@ export default function ThoughtsSection() {
                             image={blog.image}
                             overview={blog.overview}
                             tags={blog.tags}
+                            isHome={true}
                         />
                     ))}
                 </div>

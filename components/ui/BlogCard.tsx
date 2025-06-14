@@ -10,10 +10,11 @@ interface BlogCardProps {
     image: string,
     overview: string,
     tags: string[],
+    isHome?: boolean
 }
 
 
-export default function BlogCard({id, title, image, overview, tags} : BlogCardProps) {
+export default function BlogCard({id, title, image, overview, tags, isHome} : BlogCardProps) {
     console.log(id);
     return (
         <div className="flex flex-col items-start justify-start gap-8 p-6 rounded-3xl border-[0.5px] border-paragraphBlack bg-white md:h-full md:min-h-[500px]">
@@ -46,10 +47,10 @@ export default function BlogCard({id, title, image, overview, tags} : BlogCardPr
                             </Tag>
                         ))}
                     </div>
-                    <div className="mt-auto">
+                    <div className="mt-auto pt-8">
                         <Button
                             variants="detail"
-                            className="md:!hidden"
+                            className={`${isHome && 'md:hidden'}`}
                         >
                             Read More
                         </Button>
