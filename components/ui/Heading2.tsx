@@ -1,5 +1,5 @@
 interface Heading2Props {
-    children: string,
+    children: React.ReactNode,
     className?: string,
 }
 

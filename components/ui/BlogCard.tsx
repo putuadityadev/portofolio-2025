@@ -3,6 +3,7 @@ import Heading2 from "./Heading2";
 import Paragraph from "./Paragraph";
 import Tag from "./Tag";
 import Button from "./Button";
+import Link from "next/link";
 
 interface BlogCardProps {
     id: number,
@@ -47,14 +48,14 @@ export default function BlogCard({id, title, image, overview, tags, isHome} : Bl
                             </Tag>
                         ))}
                     </div>
-                    <div className="mt-auto pt-8">
+                    <Link href={`/thoughts/${id}`} className="mt-auto pt-8">
                         <Button
                             variants="detail"
                             className={`${isHome && 'md:hidden'}`}
                         >
                             Read More
                         </Button>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>
