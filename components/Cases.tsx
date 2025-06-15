@@ -2,6 +2,7 @@ import { Projects } from "@/utils/projectData";
 import Card from "./ui/Card";
 import SubHeadline from "./ui/SubHeadline";
 import Button from "./ui/Button";
+import Link from "next/link";
 
 export default function Cases() {
     return (
@@ -28,7 +29,9 @@ export default function Cases() {
                 variants="detail"
                 className="hidden md:flex -mt-4"
             >
-                View All Cases
+                <Link href={`/case`}>
+                    View All Cases
+                </Link>
             </Button>
         </section>
     )

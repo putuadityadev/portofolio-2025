@@ -1,3 +1,4 @@
+import Link from "next/link";
 import AvatarCard from "./ui/AvatarCard";
 import Button from "./ui/Button";
 import Heading2 from "./ui/Heading2";
@@ -38,7 +39,9 @@ export default function AboutSection() {
                     <Button
                         variants="detail"
                     >
-                        More About Me
+                        <Link href={`/about`}>
+                            More About Me
+                        </Link>
                     </Button>
                 </div>
             </div>
