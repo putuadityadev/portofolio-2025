@@ -22,7 +22,6 @@ export default function CaseDetail() {
     }
 
     const params = useParams();
-    console.log(params);
     
     const caseData = Projects[Number(params.slug) - 1];
 

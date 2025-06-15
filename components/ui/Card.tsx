@@ -20,7 +20,6 @@ interface CardProps {
 }
 
 export default function Card({id, title, description, images, tags, role, isHome} : CardProps) {
-    console.log(id);
     
     return (
         <Link href={`/case/${id}`} className={`flex flex-col pointer-events-auto ${

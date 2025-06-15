@@ -16,7 +16,6 @@ interface BlogCardProps {
 
 
 export default function BlogCard({id, title, image, overview, tags, isHome} : BlogCardProps) {
-    console.log(id);
     return (
         <div className="flex flex-col items-start justify-start gap-8 p-6 rounded-3xl border-[0.5px] border-paragraphBlack bg-white md:h-full md:min-h-[500px]">
             {/* image */}
