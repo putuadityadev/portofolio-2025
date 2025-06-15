@@ -25,14 +25,14 @@ export default function Cases() {
                     />
                 ))}
             </div>
-            <Button
-                variants="detail"
-                className="hidden md:flex -mt-4"
-            >
-                <Link href={`/case`}>
+            <Link href={`/case`} className="w-full">
+                <Button
+                    variants="detail"
+                    className="hidden md:flex -mt-4"
+                >
                     View All Cases
-                </Link>
-            </Button>
+                </Button>
+            </Link>
         </section>
     )
 }

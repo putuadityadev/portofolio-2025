@@ -22,7 +22,7 @@ export default function ContentSection({number, subheading, paragraph, listItem,
                 </Paragraph>
                 
                 {listItem && (
-                    <Paragraph>
+                    <div className="font-poppins text-sm md:text-base leading-[150%] text-paragraphWhite">
                         <ol className="list-disc pl-8">
                             {listItem.map((list, i) => (
                                 <li key={i}>
@@ -30,7 +30,7 @@ export default function ContentSection({number, subheading, paragraph, listItem,
                                 </li>
                             ))}
                         </ol>
-                    </Paragraph>
+                    </div>
                 )}
                 
                 {takeaway && (

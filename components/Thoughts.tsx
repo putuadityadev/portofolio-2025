@@ -2,6 +2,7 @@ import { Blogs } from "@/utils/blogData";
 import BlogCard from "./ui/BlogCard";
 import SubHeadline from "./ui/SubHeadline";
 import Button from "./ui/Button";
+import Link from "next/link";
 
 export default function ThoughtsSection() {
 
@@ -32,12 +33,14 @@ export default function ThoughtsSection() {
                         />
                     ))}
                 </div>
-                <Button
-                    variants="detail"
-                    className="hidden md:flex"
-                >
-                    Read More
-                </Button>
+                <Link href={`/thoughts`} className="w-full">
+                    <Button
+                        variants="detail"
+                        className="hidden md:flex"
+                    >
+                        Read More
+                    </Button>
+                </Link>
             </div>
     </section>
     )
