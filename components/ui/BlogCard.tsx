@@ -20,7 +20,7 @@ export default function BlogCard({id, title, image, overview, tags, isHome} : Bl
     return (
         <div className="flex flex-col items-start justify-start gap-8 p-6 rounded-3xl border-[0.5px] border-paragraphBlack bg-white md:h-full md:min-h-[500px]">
             {/* image */}
-            <div className="relative h-[171px] w-full flex-shrink-0">
+            <div className="relative h-[171px] md:h-[271px] w-full flex-shrink-0">
                 <Image 
                     alt="blog-image"
                     src={`/images/blogs/${image}`}

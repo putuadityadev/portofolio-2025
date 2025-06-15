@@ -23,7 +23,7 @@ export default function Card({id, title, description, images, tags, role, isHome
     console.log(id);
     
     return (
-        <Link href={`/case/${id}`} className={`flex flex-col pointer-events-none md:pointer-events-auto ${
+        <Link href={`/case/${id}`} className={`flex flex-col pointer-events-auto ${
             (id === 1 || !isHome )
                 ? 'md:flex-row md:col-span-2 md:items-end'
                 : 'md:flex-col'
@@ -68,9 +68,7 @@ export default function Card({id, title, description, images, tags, role, isHome
                         variants="detail"
                         className={`${isHome && 'md:hidden'}`}
                     >
-                        <Link href={`/case/${id}`}>
-                            Read More
-                        </Link>
+                        Read More
                     </Button>
                 </div>
             </div>

@@ -86,7 +86,7 @@ export const Blogs = [
     {
         id: 2,
         title: 'Micro-Interactions: The Secret Language of Digital Products',
-        image: 'blog-2-primary.svg',
+        image: 'blog-2-primary.jpg',
         overview: 'Small details create big impacts. Discover how micro-interactions shape user perception and drive engagement.',
         date: '12 June 2025',
         tags: ['Frontend', 'UI/UX', 'Interaction Design'],
@@ -155,7 +155,7 @@ export const Blogs = [
     {
         id: 3,
         title: 'When Code Meets Creativity: Building Experiences That Matter',
-        image: 'blog-3-primary.svg',
+        image: 'blog-3-primary.jpg',
         overview: 'Technical skills and creative vision don\'t have to be separate. Here\'s how to blend both for impactful web development.',
         date: '19 June 2025',
         tags: ['Web Development', 'Creativity', 'Frontend'],
@@ -224,7 +224,7 @@ export const Blogs = [
     {
         id: 4,
         title: 'The Art of Thinking in Systems: Design Beyond Screens',
-        image: 'blog-4-primary.svg',
+        image: 'blog-4-primary.jpg',
         overview: 'Great design thinking goes beyond individual screens to create cohesive, scalable experiences.',
         date: '26 June 2025',
         tags: ['Design Thinking', 'Systems', 'Strategy'],
@@ -293,7 +293,7 @@ export const Blogs = [
     {
         id: 5,
         title: 'Agile Rhythms: Finding Flow in Fast-Paced Development',
-        image: 'blog-5-primary.svg',
+        image: 'blog-5-primary.jpg',
         overview: 'Agile isn\'t just a methodology—it\'s a mindset that transforms how teams create and collaborate.',
         date: '3 July 2025',
         tags: ['Agile', 'Team Collaboration', 'Process'],
@@ -362,7 +362,7 @@ export const Blogs = [
     {
         id: 6,
         title: 'The Invisible Threads: How Great Teams Actually Work',
-        image: 'blog-6-primary.svg',
+        image: 'blog-6-primary.jpg',
         overview: 'Team collaboration isn\'t about tools and processes—it\'s about trust, communication, and shared purpose.',
         date: '10 July 2025',
         tags: ['Team Collaboration', 'Leadership', 'Culture'],
@@ -431,7 +431,7 @@ export const Blogs = [
     {
         id: 7,
         title: 'React 19 and Beyond: The Frontend Revolution Continues',
-        image: 'blog-7-primary.svg',
+        image: 'blog-7-primary.jpg',
         overview: 'Frontend development in 2025 is more powerful and accessible than ever. Here\'s what\'s shaping the landscape.',
         date: '17 July 2025',
         tags: ['Frontend', 'React', 'JavaScript'],
@@ -500,7 +500,7 @@ export const Blogs = [
     {
         id: 8,
         title: 'AI as Your Coding Companion: Amplifying Human Creativity',
-        image: 'blog-8-primary.svg',
+        image: 'blog-8-primary.jpg',
         overview: 'AI tools are transforming how we write code, but the human element remains irreplaceable.',
         date: '24 July 2025',
         tags: ['AI', 'Development', 'Productivity'],
@@ -569,7 +569,7 @@ export const Blogs = [
     {
         id: 9,
         title: 'Design Systems That Breathe: Creating Living Documentation',
-        image: 'blog-9-primary.svg',
+        image: 'blog-9-primary.jpg',
         overview: 'The best design systems evolve with their teams and products. Here\'s how to build systems that grow.',
         date: '31 July 2025',
         tags: ['Design Systems', 'Documentation', 'Collaboration'],
@@ -638,7 +638,7 @@ export const Blogs = [
     {
         id: 10,
         title: 'The Mindful Developer: Balancing Speed and Sustainability',
-        image: 'blog-10-primary.svg',
+        image: 'blog-10-primary.jpg',
         overview: 'In a world of rapid development cycles, how do we maintain quality, creativity, and personal well-being?',
         date: '7 August 2025',
         tags: ['Development', 'Sustainability', 'Mindfulness'],
