@@ -98,16 +98,16 @@ export const whatICanDo = [
 
 export const experienceData = [
     {
-        title: "2024",
+        title: "2022",
         content: {
-            role: "Fullstack Developer",
-            company: "Klik Kamera",
-            period: "March 2024 - May 2024",
-            description: "Developed a comprehensive digital booking system that reduced abandonment rates by 35%. Built using React, Laravel, and modern web technologies to create an intuitive booking platform.",
+            role: "Web Developer",
+            company: "Freelance",
+            period: "Dec 2022 - Now",
+            description: "Providing web development services for various clients, specializing in creating custom websites and web applications. Delivering end-to-end solutions from design to deployment while maintaining strong client relationships.",
             achievements: [
-                "Reduced booking process completion time by 40%",
-                "Improved user satisfaction with streamlined booking flow",
-                "Increased daily booking capacity"
+                "Successfully completed 5+ client projects with 100% satisfaction rate",
+                "Maintained long-term relationships with 70% of clients",
+                "Consistently delivered projects on time and within budget"
             ],
             technologies: ["React", "Laravel", "TailwindCSS", "MySQL"]
         }
@@ -115,46 +115,48 @@ export const experienceData = [
     {
         title: "2024",
         content: {
-            role: "UI/UX Designer",
-            company: "Fita Health App",
-            period: "April 2024",
-            description: "Designed an all-in-one health and wellness mobile app for young Indonesians aged 18-29. Created comprehensive user experience for exercise, nutrition, and mental health tracking.",
-            achievements: [
-                "Won 1st Place in National UI/UX Design Competition",
-                "Created user-centered design for health management",
-                "Developed comprehensive design system"
-            ],
-            technologies: ["Figma", "Design Thinking", "User Research"]
-        }
-    },
-    {
-        title: "2023",
-        content: {
             role: "Software Engineering Student",
-            company: "Politeknik Negeri Bali",
-            period: "2023 - Present",
-            description: "Pursuing Software Engineering degree with focus on web development and user experience design. Actively participating in programming competitions and design challenges.",
+            company: "Softuni",
+            period: "Dec 2024",
+            description: "Pursuing Software Engineering diploma with focus on Python development and programming fundamentals. Actively participating in hands-on projects and technical challenges.",
             achievements: [
-                "Earned National Diploma in Software Engineering with Python",
-                "Participated in multiple programming competitions",
-                "Developed strong foundation in software development"
+                "Completed comprehensive Python programming curriculum",
+                "Developed practical software engineering skills",
+                "Successfully completed multiple project-based assessments"
             ],
             technologies: ["Python", "JavaScript", "Web Development", "Database Design"]
         }
     },
     {
-        title: "2022",
+        title: "2025",
         content: {
-            role: "Freelance Developer",
-            company: "Various Clients",
-            period: "2022 - 2023",
-            description: "Started freelance journey developing websites and mobile applications for local businesses. Gained experience in client communication and project management.",
+            role: "Junior Fullstack Developer",
+            company: "Omni Hotelier",
+            period: "Feb 2025 - Now",
+            description: "Collaborated with designers and back-end developers in an Agile Scrum team, contributing to sprint planning, daily stand-ups, and code reviews to build a robust hotel booking engine.",
             achievements: [
-                "Completed 10+ freelance projects",
-                "Built strong client relationships",
-                "Developed project management skills"
+                "Developed and integrated key features using Laravel and React.js",
+                "Reduced booking errors by enhancing front-end responsiveness",
+                "Improved back-end reliability and user satisfaction",
+                "Resolved UI bugs through pair programming with designers"
             ],
-            technologies: ["HTML", "CSS", "JavaScript", "PHP", "WordPress"]
+            technologies: ["Laravel", "React.js", "Agile", "Scrum"]
+        }
+    },
+    {
+        title: "2025",
+        content: {
+            role: "UI/UX Developer",
+            company: "Techsology",
+            period: "Mei 2025 - Now",
+            description: "Co-founded Techsology and led UI/UX design and front-end development for Renta, a marketplace app connecting vehicle renters with owners in Bali.",
+            achievements: [
+                "Designed intuitive interfaces that simplified the rental process",
+                "Increased user engagement through seamless experience",
+                "Conducted user research using Design Thinking",
+                "Created interactive prototypes and collaborated in Agile sprints"
+            ],
+            technologies: ["UI/UX Design", "Design Thinking", "Prototyping", "Agile"]
         }
     }
 ];
