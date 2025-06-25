@@ -1,7 +1,7 @@
 export const Projects = [
     {
         id: 1,
-        title: 'Digital Booking System For Klik Kamera',
+        title: 'Revolutionizing Camera Rentals: A 35% Boost in Booking Efficiency for Klik Kamera',
         description: 'Built a digital booking system for Klik Kamera that reduced abandonment rates by 35% through an optimized, user-friendly interface.',
         images: {
             primary: 'klik-kamera-primary.svg',
@@ -173,7 +173,7 @@ export const Projects = [
     },
     {
         id: 2,
-        title: 'Fita - Health & Wellness Mobile App',
+        title: 'Empowering Young Indonesians: A Comprehensive Health & Wellness App',
         description: 'Designed an all-in-one health and wellness mobile app that helps young Indonesians aged 18-29 maintain a healthy lifestyle through integrated features for exercise, nutrition, and mental health.',
         images: {
             primary: 'fita-primary.svg',
@@ -186,7 +186,7 @@ export const Projects = [
             'Health & Wellness'
         ],
         link: {
-            live: 'https://www.figma.com/proto/CczxMkjiqC5Dh3mAsY13M0/Lomba-Sitefest-Adit',
+            live: 'https://www.figma.com/proto/CczxMkjiqC5Dh3mAsY13M0/Fita---Lomba-UI-UX--Adit-?node-id=237-6068&t=eDDuxZ6yaFBrHKKB-1',
             github: '/'
         },
         detail: {
@@ -291,7 +291,7 @@ export const Projects = [
     },
     {
         id: 3,
-        title: 'Renta - Vehicle Rental Marketplace (Ongoing)',
+        title: 'Renta: Revolutionizing Mobility with Seamless Vehicle Sharing (Ongoing)',
         description: 'Leading UI development and design for an innovative vehicle rental marketplace in Bali, focusing on user-centric design and collaborative development using Design Thinking and Agile methodologies.',
         images: {
             primary: 'renta-primary.svg',
