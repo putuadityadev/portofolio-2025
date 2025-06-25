@@ -59,6 +59,7 @@ export default function CaseDetail() {
                         />
                         <Button
                             variants="detail"
+                            onClick={() => window.open(`${caseData.link.live}`, '_blank')}
                         >
                             View Live
                         </Button>
