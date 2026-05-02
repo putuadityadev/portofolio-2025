@@ -1,17 +1,15 @@
 import { Projects } from "@/utils/projectData";
 import Card from "./ui/Card";
 import SubHeadline from "./ui/SubHeadline";
-import Button from "./ui/Button";
-import Link from "next/link";
 
 export default function Cases() {
     return (
-        <section className="w-full min-h-dvh flex gap-12 flex-col justify-start items-center mt-32">
+        <section className="w-full min-h-dvh flex gap-8 md:gap-10 flex-col justify-center items-center max-w-[900px] mx-auto">
             <SubHeadline>
-                Real Case
+                My Recent Projects
             </SubHeadline>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 auto-rows-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 auto-rows-auto">
                 {Projects.map((project) => (
                     <Card 
                         key={project.id}
@@ -25,14 +23,6 @@ export default function Cases() {
                     />
                 ))}
             </div>
-            <Link href={`/case`} className="w-full">
-                <Button
-                    variants="detail"
-                    className="hidden md:flex -mt-4"
-                >
-                    View All Cases
-                </Button>
-            </Link>
         </section>
     )
 }

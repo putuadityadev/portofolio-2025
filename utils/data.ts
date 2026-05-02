@@ -131,8 +131,8 @@ export const experienceData = [
         title: "2025",
         content: {
             role: "Junior Fullstack Developer",
-            company: "Omni Hotelier",
-            period: "Feb 2025 - Now",
+            company: "PT Omni Hotelier International",
+            period: "Feb 2025 - Dec 2025",
             description: "Collaborated with designers and back-end developers in an Agile Scrum team, contributing to sprint planning, daily stand-ups, and code reviews to build a robust hotel booking engine.",
             achievements: [
                 "Developed and integrated key features using Laravel and React.js",
@@ -144,19 +144,20 @@ export const experienceData = [
         }
     },
     {
-        title: "2025",
+        title: "2026",
         content: {
-            role: "UI/UX Developer",
-            company: "Techsology",
-            period: "Mei 2025 - Now",
-            description: "Co-founded Techsology and led UI/UX design and front-end development for Renta, a marketplace app connecting vehicle renters with owners in Bali.",
+            role: "Intermediate Lead Fullstack Developer",
+            company: "PT Omni Hotelier International",
+            period: "Jan 2026 - Now",
+            description: "Promoted to lead the Membership product team, overseeing 3 fullstack developers. Shifted from the Booking Engine product to spearhead the development of the membership ecosystem and core multitenant architecture.",
             achievements: [
-                "Designed intuitive interfaces that simplified the rental process",
-                "Increased user engagement through seamless experience",
-                "Conducted user research using Design Thinking",
-                "Created interactive prototypes and collaborated in Agile sprints"
+                "Successfully led a team of 3 fullstack developers to achieve key project goals",
+                "Enhanced the UI/UX from the member perspective for improved engagement",
+                "Developed the Extranet Portal for Omni Hotelier management",
+                "Developed mobile applications and enhanced features in the multitenant architecture",
+                "Achieved all major development targets and milestones for the Membership product"
             ],
-            technologies: ["UI/UX Design", "Design Thinking", "Prototyping", "Agile"]
+            technologies: ["Fullstack Development", "Leadership", "Multitenant Architecture", "Mobile Development", "UI/UX Optimization"]
         }
     }
 ];

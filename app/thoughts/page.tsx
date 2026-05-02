@@ -10,7 +10,7 @@ export default function Thoughts() {
                     My Thoughts
                 </SubHeadline>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 bg-cardBg rounded-4xl border-[0.5px] border-paragraphBlack">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {Blogs.map((blog) => (
                         <BlogCard 
                             key={blog.id}

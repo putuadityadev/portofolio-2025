@@ -5,9 +5,9 @@ import { Projects } from "@/utils/projectData";
 export default function Case() {
     return (
         <main className="min-h-dvh pt-[128px]">
-            <section className="flex flex-col items-center justify-center w-full gap-12 md:gap-16">
+            <section className="flex flex-col items-center justify-center w-full gap-12 md:gap-16 max-w-[900px] mx-auto">
                 <SubHeadline>
-                    Cases
+                    All Projects & Cases
                 </SubHeadline>
 
                 <div className="flex flex-col justify-center items-center gap-6">

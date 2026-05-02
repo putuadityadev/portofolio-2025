@@ -11,6 +11,13 @@ export default function About() {
 
             <section className="w-full mt-32 flex flex-col justify-start items-center gap-12 md:gap-16">
                 <SubHeadline>
+                    My Path of Experience
+                </SubHeadline>
+                <ExperienceTimeline />
+            </section>
+
+            <section className="w-full mt-32 flex flex-col justify-start items-center gap-12 md:gap-16">
+                <SubHeadline>
                     What Can I Do
                 </SubHeadline>
                 <div className="flex flex-col gap-3">
@@ -22,14 +29,7 @@ export default function About() {
                         />
                     ))}
                 </div>
-            </section>
-
-            <section className="w-full mt-32 flex flex-col justify-start items-center gap-12 md:gap-16">
-                <SubHeadline>
-                    My Path of Experience
-                </SubHeadline>
-                <ExperienceTimeline />
-            </section>
+            </section> 
         </main>
     )
 }

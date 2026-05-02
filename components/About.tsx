@@ -13,11 +13,11 @@ export default function AboutSection() {
     const pathname = usePathname();
     
     return (
-        <section className="w-full mt-32 flex flex-col justify-start items-center gap-12">
+        <section className="w-full mt-32 flex flex-col justify-start items-center gap-12 max-w-[900px] mx-auto">
             <SubHeadline>
                 About Me
             </SubHeadline>
-            <div className="flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start gap-4 md:gap-4.5 bg-cardBg p-6 rounded-4xl border-[0.5px] border-paragraphBlack w-full">
+            <div className="flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start gap-4 md:gap-4.5 p-6 rounded-4xl border-[0.5px] border-paragraphBlack w-full">
                 {/* Image */}
                 <AvatarCard />
                 <div className="flex flex-col gap-4 md:w-[376px]">

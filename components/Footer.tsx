@@ -32,7 +32,7 @@ export default function Footer() {
             </div>
             <div className="w-full flex items-center justify-between">
                 <h3 className="font-poppins leading-[100%] tracking-[-0.54px]">
-                    © 2025 Putu Aditya.
+                    © 2026 Putu Aditya.
                 </h3>
                 <button
                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}

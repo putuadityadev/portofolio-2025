@@ -13,14 +13,14 @@ export default function Avatar() {
             onMouseLeave={() => setIsHovered(false)}
         >
             <motion.h1 
-                className="text-2xl tracking-[100%] leading-[100%] absolute top-0 left-1/2 transform -translate-x-1/2 z-10"
+                className="text-2xl tracking-[100%] leading-[100%] absolute top-0 left-1/2 transform -translate-x-1/4 z-10"
                 initial={{ y: -40, x:-4, opacity: 0 }}
                 animate={{
                     y: isHovered ? 10 : -40,
                     opacity: isHovered ? 1 : 0,
                 }}
             >
-                👋
+            👋
             </motion.h1>
 
             <motion.div

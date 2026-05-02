@@ -1,7 +1,7 @@
 export const Projects = [
     {
         id: 1,
-        title: 'Revolutionizing Camera Rentals: A 35% Boost in Booking Efficiency for Klik Kamera',
+        title: 'Digital Booking System for Klik Kamera',
         description: 'Built a digital booking system for Klik Kamera that reduced abandonment rates by 35% through an optimized, user-friendly interface.',
         images: {
             primary: 'klik-kamera-primary.svg',
@@ -173,7 +173,7 @@ export const Projects = [
     },
     {
         id: 2,
-        title: 'Empowering Young Indonesians: A Comprehensive Health & Wellness App',
+        title: 'Fita UI/UX Design for Health & Wellness Mobile App',
         description: 'Designed an all-in-one health and wellness mobile app that helps young Indonesians aged 18-29 maintain a healthy lifestyle through integrated features for exercise, nutrition, and mental health.',
         images: {
             primary: 'fita-primary.svg',
@@ -290,155 +290,146 @@ export const Projects = [
         }
     },
     {
-        id: 3,
-        title: 'Renta: Revolutionizing Mobility with Seamless Vehicle Sharing (Ongoing)',
-        description: 'Leading UI development and design for an innovative vehicle rental marketplace in Bali, focusing on user-centric design and collaborative development using Design Thinking and Agile methodologies.',
-        images: {
-            primary: 'renta-primary.svg',
-            extra_1: '/',
-            extra_2: '/'
+        "id": 3,
+        "title": "Sivara LMS: Digitizing Public Schools in Rural Bali",
+        "description": "A comprehensive LMS built to solve monitoring challenges at SMPN 6 Kintamani, featuring an offline-resilient CBT module and a specialized Teacher Supervision System for Principals.",
+        "images": {
+            "primary": "sivara-primary.svg",
+            "extra_1": "/",
+            "extra_2": "/"
         },
-        tags: [
-            'Web Platform',
-            'UI/UX Design',
-            'Startup',
+        "tags": [
+            "LMS",
+            "Education Tech",
+            "E-Government"
         ],
-        link: {
-            live: '/',
-            github: '/'
+        "link": {
+            "live": "https://spensixkita.sivara.id",
+            "github": "https://github.com/Sistem-Belajar-Sekolah/sevira-lms"
         },
-        detail: {
-            project_overview: 'Renta is an innovative web-based marketplace platform connecting vehicle rental seekers with rental businesses in Bali. As a founding member and UI Developer at Techsology, I lead the design and frontend development efforts in a collaborative team of five entrepreneurs.',
-            problem_statement: 'The vehicle rental market in Bali lacks a streamlined digital platform that effectively connects customers with rental businesses. Current solutions are fragmented and often provide poor user experiences, creating inefficiencies in the rental process for both customers and business owners.',
-            industry: 'Vehicle Rental',
-            my_role: 'Co Founder & UI Developer',
-            project_type: 'Web Platform',
-            timeline: {
-                start: '1 Mei 2025',
-                end: 'Ongoing'
+        "detail": {
+            "project_overview": "Sivara LMS is a localized Learning Management System developed specifically for public schools in Bali, with SMPN 6 Kintamani as the primary implementation site. The platform bridge the digital gap in rural areas by providing a high-performance, cost-effective solution for academic management. Beyond traditional LMS features, Sivara focuses heavily on administrative transparency, allowing school leaders to effectively oversee educational activities and teacher performance in real-time.",
+            "problem_statement": "Many public schools in Bali, particularly in rural areas like Kintamani, still rely on fragmented manual systems due to the lack of dedicated LMS infrastructure. A critical pain point for the Principal at SMPN 6 Kintamani was the difficulty in monitoring teacher performance and administrative compliance (supervision). Without a centralized digital tool, supervising hundreds of lesson plans and teacher activities was nearly impossible, leading to operational silos and inconsistent academic standards.",
+            "industry": "Education / Public Sector",
+            "my_role": "Founder & Fullstack Developer",
+            "project_type": "Web Platform",
+            "timeline": {
+                "start": "1 Mei 2025",
+                "end": "Ongoing"
             },
-            tools_framework: [
+            "tools_framework": [
                 {
-                    name: 'Design Thinking',
-                    image: '/design_thinking.svg'
+                    "name": "Design Thinking",
+                    "image": "/design_thinking.svg"
                 },
                 {
-                    name: 'Agile Scrum',
-                    image: '/agile.svg'
+                    "name": "Next.js",
+                    "image": "/nextjs.svg"
                 },
                 {
-                    name: 'figma',
-                    image: '/figma.svg'
+                    "name": "NestJS",
+                    "image": "/nestjs.svg"
                 },
                 {
-                    name: 'miro',
-                    image: '/miro.svg'
+                    "name": "Tailwind CSS",
+                    "image": "/tailwindcss.svg"
                 },
                 {
-                    name: 'gitlab',
-                    image: '/gitlab.svg'
-
+                    "name": "TypeScript",
+                    "image": "/typescript.svg"
                 },
                 {
-                    name: 'jira',
-                    image: '/jira.svg'
+                    "name": "Redis & BullMQ",
+                    "image": "/redis.svg"
                 },
                 {
-                    name: 'trae',
-                    image: '/trae.svg'
+                    "name": "PostgreSQL",
+                    "image": "/postgresql.svg"
                 },
                 {
-                    name: 'notion',
-                    image: '/notion.svg'
+                    "name": "Cloudflare R2",
+                    "image": "/cloudflare.svg"
                 },
                 {
-                    name: 'react',
-                    image: '/react.svg'
+                    "name": "Shadcn UI",
+                    "image": "/shadcn.svg"
                 },
                 {
-                    name: 'typescript',
-                    image: '/typescript.svg'
-                },
-                {
-                    name: 'tailwindcss',
-                    image: '/tailwindcss.svg'
-
+                    "name": "Framer Motion",
+                    "image": "/framer.svg"
                 }
             ],
-            process: [
+            "process": [
                 {
-                    id: 1,
-                    name: 'Research & Discovery',
-                    detail: [
-                        'Led collaborative market research and competitor analysis with the founding team',
-                        'Facilitated Design Thinking workshops to identify user pain points',
-                        'Created comprehensive user personas and journey maps',
-                        'Developed Business Model Canvas with stakeholders',
-                        'Conducted user interviews with potential customers and rental businesses'
+                    "id": 1,
+                    "name": "Field Research & Contextual Inquiry",
+                    "detail": [
+                        "Conducted on-site research at SMPN 6 Kintamani to understand rural connectivity challenges",
+                        "Interviewed the Principal to map out the specific pain points in teacher supervision and reporting",
+                        "Analyzed the existing manual supervision workflow to identify digital transformation opportunities",
+                        "Identified the need for a low-bandwidth solution that still delivers high performance during exams",
+                        "Collaborated with local educators to ensure the UI was intuitive for varying levels of digital literacy"
                     ]
                 },
                 {
-                    id: 2,
-                    name: 'Strategic Planning',
-                    detail: [
-                        'Established Agile development framework and team workflows',
-                        'Created detailed project roadmap and sprint planning',
-                        'Set up collaborative tools and development environment',
-                        'Defined key metrics and success indicators',
-                        'Developed comprehensive business and technical documentation'
+                    "id": 2,
+                    "name": "Supervision System Architecture",
+                    "detail": [
+                        "Designed a specialized Teacher Supervision module with automated templates and progress tracking",
+                        "Architected a Principal Dashboard to provide macro-level visibility into teacher activities",
+                        "Configured Cloudflare R2 for cost-effective and low-latency storage of academic assets in Bali region",
+                        "Implemented an offline-resilient exam engine using Local Storage to survive rural power outages",
+                        "Defined a multi-tenant structure to allow easy adoption by other public schools in the future"
                     ]
                 },
                 {
-                    id: 3,
-                    name: 'Design & Prototyping',
-                    detail: [
-                        'Led UI/UX design process using Figma and Miro',
-                        'Collaborated with team on user flow optimization',
-                        'Created interactive prototypes for user testing',
-                        'Implemented design system and component library',
-                        'Facilitated design review sessions with stakeholders'
+                    "id": 3,
+                    "name": "Agile Development & Prototyping",
+                    "detail": [
+                        "Built the supervisory reporting tools allowing teachers to submit evidence of activity digitally",
+                        "Developed real-time notification systems for principals when supervision milestones are met",
+                        "Utilized NestJS and BullMQ to handle large-scale exam submission queues asynchronously",
+                        "Created responsive UI components that work seamlessly on both school lab PCs and teachers' mobile devices",
+                        "Iterated on the supervision interface based on direct feedback from the SMPN 6 Kintamani administration"
                     ]
                 },
                 {
-                    id: 4,
-                    name: 'Development (Ongoing)',
-                    detail: [
-                        'Managing frontend development using React and TypeScript',
-                        'Implementing responsive and accessible UI components',
-                        'Collaborating with backend team on API integration',
-                        'Leading code reviews and technical discussions',
-                        'Maintaining development documentation and guidelines'
+                    "id": 4,
+                    "name": "Deployment & Implementation",
+                    "detail": [
+                        "Deployed the system on localized infrastructure for optimal performance within the Bali network",
+                        "Conducted training sessions for teachers and staff at SMPN 6 Kintamani",
+                        "Monitored server health during the first school-wide CBT trial to ensure zero downtime",
+                        "Optimized Cloudflare R2 integration for rapid document retrieval and storage of supervision evidence",
+                        "Established a feedback loop for continuous improvement of the supervisory features"
                     ]
                 }
             ],
-            outcome: [
-                'Successfully launched first development sprint with focus on core authentication',
-                'Established efficient team collaboration workflows and processes',
-                'Created comprehensive design system and component library',
-                'Developed detailed technical architecture and documentation'
+            "outcome": [
+                "Successfully implemented a centralized LMS at SMPN 6 Kintamani, setting a digital benchmark for rural Bali",
+                "Improved Principal's supervision efficiency by 80% through automated tracking and digital reporting",
+                "Achieved 100% submission rates for teacher lesson plans and administrative reports through the platform",
+                "Delivered a robust CBT system that functions reliably even during the frequent network fluctuations in Kintamani"
             ],
-            key_learning: [
+            "key_learning": [
                 {
-                    name: 'Team Collaboration',
-                    description: 'Effective communication and collaborative decision-making are crucial for startup success and product development.'
+                    "name": "Localized Problem Solving",
+                    "description": "Learned that building for rural schools requires a deep understanding of local infrastructure and administrative hierarchies."
                 },
                 {
-                    name: 'Design Thinking Impact',
-                    description: 'Implementing Design Thinking methodology helped create more user-centered solutions and better product decisions.'
+                    "name": "Supervisory UI/UX",
+                    "description": "Discovered that transparency in teacher performance is just as important as the student learning experience for school success."
                 },
                 {
-                    name: 'Agile Adaptation',
-                    description: 'Flexibility in adapting Agile practices to team needs while maintaining structured development process.'
+                    "name": "Cost-Effective Scalability",
+                    "description": "Utilizing Cloudflare R2 proved that high-performance storage can be achieved within tight public school budgets."
                 },
                 {
-                    name: 'Leadership Skills',
-                    description: 'Balancing technical leadership with team management requires clear communication and strategic thinking.'
-                },
-                {
-                    name: 'Startup Dynamics',
-                    description: 'Understanding the importance of rapid iteration and validation in early-stage startup development.'
+                    "name": "Community Impact",
+                    "description": "Witnessed how digitizing a single school like SMPN 6 Kintamani can inspire digital transformation across an entire district."
                 }
             ]
         }
     }
+
 ]

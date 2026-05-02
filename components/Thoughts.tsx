@@ -19,7 +19,7 @@ export default function ThoughtsSection() {
             <SubHeadline>
                 My Thoughts
             </SubHeadline>
-            <div className="flex flex-col p-6 border-[0.5px] border-paragraphBlack rounded-4xl bg-cardBg gap-8">
+            <div className="flex flex-col p-6 gap-8">
                 <div className="flex flex-col md:grid md:grid-cols-3 justify-center items-stretch w-full gap-8 ">
                     {randomBlogs.map((blog) => (
                         <BlogCard 
