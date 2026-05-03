@@ -294,7 +294,7 @@ export const Projects = [
         "title": "Sivara LMS: Digitizing Public Schools in Rural Bali",
         "description": "A comprehensive LMS built to solve monitoring challenges at SMPN 6 Kintamani, featuring an offline-resilient CBT module and a specialized Teacher Supervision System for Principals.",
         "images": {
-            "primary": "sivara-primary.svg",
+            "primary": "sivara-primary.png",
             "extra_1": "/",
             "extra_2": "/"
         },

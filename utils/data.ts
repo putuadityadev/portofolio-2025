@@ -68,12 +68,24 @@ export const myTechStack = [
 export const certificatesData = [
     {
         name: '1st Place Winner of National UI/UX Design Competition',
-        image: '/certificate-ui-ux.svg'
+        image: '/certificate-ui-ux.svg',
+        type: 'Award'
     },
     {
-        name: 'National Diploma Software Engineer with Pyhton',
-        image: '/certificate-python.svg'
-    }
+        name: 'National Diploma Software Engineer with Python',
+        image: '/certificate-python.svg',
+        type: 'Certification'
+    },
+    {
+        name: 'Outstanding Student Primakara University 2025',
+        image: '/certificate-mapres.svg',
+        type: 'Award'
+    },
+    {
+        name: '2nd Place Winner of National Website Dev Competition',
+        image: '/certificate-web.svg',
+        type: 'Award'
+    },
 ]
 
 export const whatICanDo = [
