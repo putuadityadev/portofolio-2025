@@ -127,39 +127,64 @@ export default function CaseDetail() {
                     transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
                     className="grid grid-cols-1 md:grid-cols-12 gap-4 mb-16 md:mb-24"
                 >
-                    {/* Primary Large Image */}
+                    {/* Primary Large Image/Video */}
                     <div className="md:col-span-8 rounded-[32px] overflow-hidden relative aspect-square md:aspect-auto bg-cardBg border border-paragraphBlack/10 group h-[400px] md:h-[600px]">
-                        <Image 
-                            src={`/images/${caseData.images.primary}`}
-                            alt={`${caseData.title} Primary View`}
-                            fill
-                            className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-                        />
+                        {(caseData as any).video?.primary ? (
+                            <div className="absolute inset-0 flex items-center justify-center p-4 sm:p-8 md:p-12">
+                                <div className="w-full rounded-xl md:rounded-[20px] overflow-hidden border border-paragraphBlack/10 shadow-2xl relative bg-white transition-all duration-700 group-hover:scale-[1.02] group-hover:shadow-secondary/20">
+                                    {/* MacOS Browser Header */}
+                                    <div className="h-6 md:h-8 bg-[#F3F3F3] border-b border-paragraphBlack/5 flex items-center px-3 md:px-4 gap-1.5 md:gap-2 w-full shrink-0">
+                                        <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-[#FF5F56] border border-black/10" />
+                                        <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-[#FFBD2E] border border-black/10" />
+                                        <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-[#27C93F] border border-black/10" />
+                                    </div>
+                                    <video 
+                                        src={`/videos/${(caseData as any).video.primary}`}
+                                        autoPlay
+                                        loop
+                                        muted
+                                        playsInline
+                                        className="w-full h-auto block"
+                                    />
+                                </div>
+                            </div>
+                        ) : (
+                            <Image 
+                                src={`/images/${caseData.images.primary}`}
+                                alt={`${caseData.title} Primary View`}
+                                fill
+                                className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                            />
+                        )}
                     </div>
                     {/* Extra Images Column */}
                     <div className="md:col-span-4 flex flex-col gap-4">
-                        <div className="rounded-[32px] overflow-hidden relative flex-1 bg-cardBg border border-paragraphBlack/10 group min-h-[250px] md:min-h-[292px]">
+                        <div className="rounded-[32px] overflow-hidden relative flex-1 bg-cardBg border border-paragraphBlack/10 group min-h-[250px] md:min-h-[292px] flex items-center justify-center p-6 md:p-10">
                             {caseData.images.extra_1 !== '/' ? (
-                                <Image 
-                                    src={`/images/${caseData.images.extra_1}`}
-                                    alt={`${caseData.title} Detail 1`}
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-[1.05]"
-                                />
+                                <div className="relative w-full h-full">
+                                    <Image 
+                                        src={`/images/${caseData.images.extra_1}`}
+                                        alt={`${caseData.title} Detail 1`}
+                                        fill
+                                        className="object-contain transition-transform duration-700 group-hover:scale-[1.05]"
+                                    />
+                                </div>
                             ) : (
                                 <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/5 to-transparent">
                                     <span className="text-primary/40 font-medium font-nohemi tracking-widest text-xs uppercase">Detail Shot 1</span>
                                 </div>
                             )}
                         </div>
-                        <div className="rounded-[32px] overflow-hidden relative flex-1 bg-cardBg border border-paragraphBlack/10 group min-h-[250px] md:min-h-[292px]">
+                        <div className="rounded-[32px] overflow-hidden relative flex-1 bg-cardBg border border-paragraphBlack/10 group min-h-[250px] md:min-h-[292px] flex items-center justify-center p-6 md:p-10">
                             {caseData.images.extra_2 !== '/' ? (
-                                <Image 
-                                    src={`/images/${caseData.images.extra_2}`}
-                                    alt={`${caseData.title} Detail 2`}
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-[1.05]"
-                                />
+                                <div className="relative w-full h-full">
+                                    <Image 
+                                        src={`/images/${caseData.images.extra_2}`}
+                                        alt={`${caseData.title} Detail 2`}
+                                        fill
+                                        className="object-contain transition-transform duration-700 group-hover:scale-[1.05]"
+                                    />
+                                </div>
                             ) : (
                                 <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-tl from-secondary/20 to-transparent">
                                     <span className="text-secondary/60 font-medium font-nohemi tracking-widest text-xs uppercase">Detail Shot 2</span>
@@ -199,7 +224,7 @@ export default function CaseDetail() {
                 </section>
 
                 {/* Solutions */}
-                <section className="mt-20 md:mt-32 flex flex-col w-full overflow-hidden">
+                <section className="flex flex-col w-full overflow-hidden">
                     <div className="flex flex-col gap-4.5 px-0">
                         <Heading2>
                             My Path To Solve The Problem

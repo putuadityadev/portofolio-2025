@@ -5,8 +5,11 @@ export const Projects = [
         description: 'Built a digital booking system for Klik Kamera that reduced abandonment rates by 35% through an optimized, user-friendly interface.',
         images: {
             primary: 'klik-kamera-primary.svg',
-            extra_1: '/',
-            extra_2: '/'
+            extra_1: 'klik-kamera-2.webp',
+            extra_2: 'klik-kamera-3.webp'
+        },
+        video: {
+            primary: 'klik-kamera.mp4'
         },
         tags: [
             'Website',
