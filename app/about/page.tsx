@@ -21,11 +21,12 @@ export default function About() {
                     What Can I Do
                 </SubHeadline>
                 <div className="flex flex-col gap-3">
-                    {whatICanDo.map((skill) => (
+                    {whatICanDo.map((skill, index) => (
                         <KeyLearningCard 
                             name={skill.name}
                             description={skill.description}
                             key={skill.name}
+                            index={index}
                         />
                     ))}
                 </div>

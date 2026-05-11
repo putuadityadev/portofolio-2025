@@ -14,7 +14,7 @@ export default function Footer() {
 
             <div className="flex flex-col items-start gap-3 w-full">
                 <span className="leading-[124%]">Have A Problem To Solve?</span>
-                <h2 className="text-[8rem] md:text-[10.25rem] font-normal leading-[100%] tracking-[1.28px] text-cardBg">
+                <h2 className="text-[8rem] md:text-[13.25rem] font-normal leading-[100%] tracking-[1.28px] text-cardBg">
                     LET’S TALK
                 </h2>
             </div>

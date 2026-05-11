@@ -34,7 +34,13 @@ export default function CaseDetail() {
         rowsBy3.push(caseData.detail.process.slice(i, i + 3));
     }
 
-    const renderRoadmap = (rows: any[], columns: number, displayClass: string) => {
+    interface ProcessStep {
+        id: number;
+        name: string;
+        detail: string[];
+    }
+
+    const renderRoadmap = (rows: ProcessStep[][], columns: number, displayClass: string) => {
         return (
             <div className={`${displayClass} flex-col w-full relative pt-4 pb-10 gap-6 lg:gap-10`}>
                 {rows.map((row, rowIndex) => {
@@ -56,7 +62,7 @@ export default function CaseDetail() {
                                 <div className="absolute top-1/2 h-[2px] border-t-[2px] border-dashed border-paragraphBlack/30 -z-10" style={horizStyle} />
                             )}
 
-                            {row.map((step: any) => {
+                            {row.map((step: ProcessStep) => {
                                 return (
                                     <div key={step.id} className="px-4 py-6 relative flex justify-center" style={{ width: `${itemStep}%` }}>
                                         {/* Dot */}
@@ -129,7 +135,7 @@ export default function CaseDetail() {
                 >
                     {/* Primary Large Image/Video */}
                     <div className="md:col-span-8 rounded-[32px] overflow-hidden relative aspect-square md:aspect-auto bg-cardBg border border-paragraphBlack/10 group h-[400px] md:h-[600px]">
-                        {(caseData as any).video?.primary ? (
+                        {(caseData as { video?: { primary?: string } }).video?.primary ? (
                             <div className="absolute inset-0 flex items-center justify-center p-4 sm:p-8 md:p-12">
                                 <div className="w-full rounded-xl md:rounded-[20px] overflow-hidden border border-paragraphBlack/10 shadow-2xl relative bg-white transition-all duration-700 group-hover:scale-[1.02] group-hover:shadow-secondary/20">
                                     {/* MacOS Browser Header */}
@@ -139,7 +145,7 @@ export default function CaseDetail() {
                                         <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-[#27C93F] border border-black/10" />
                                     </div>
                                     <video 
-                                        src={`/videos/${(caseData as any).video.primary}`}
+                                        src={`/videos/${(caseData as { video?: { primary?: string } }).video?.primary}`}
                                         autoPlay
                                         loop
                                         muted

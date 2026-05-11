@@ -21,7 +21,7 @@ interface ExperienceItem {
 }
 
 export default function ExperienceTimeline() {
-    const timelineData = experienceData.map((item: ExperienceItem) => ({
+    const timelineData = [...experienceData].reverse().map((item: ExperienceItem) => ({
         title: item.title,
         content: (
             <div className="bg-white rounded-3xl border-[0.5px] border-paragraphBlack p-6 md:p-8 mb-8">

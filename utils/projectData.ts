@@ -180,8 +180,11 @@ export const Projects = [
         description: 'Designed an all-in-one health and wellness mobile app that helps young Indonesians aged 18-29 maintain a healthy lifestyle through integrated features for exercise, nutrition, and mental health.',
         images: {
             primary: 'fita-primary.svg',
-            extra_1: '/',
-            extra_2: '/'
+            extra_1: 'fita-1.png',
+            extra_2: 'fita-2.png'
+        },
+        video: {
+            primary: 'fita.mp4'
         },
         tags: [
             'Mobile App',
@@ -298,8 +301,11 @@ export const Projects = [
         "description": "A comprehensive LMS built to solve monitoring challenges at SMPN 6 Kintamani, featuring an offline-resilient CBT module and a specialized Teacher Supervision System for Principals.",
         "images": {
             "primary": "sivara-primary.png",
-            "extra_1": "/",
-            "extra_2": "/"
+            "extra_1": "sivara-primary.png",
+            "extra_2": "sivara-1.png"
+        },
+        video: {
+            primary: 'sivara.mp4'
         },
         "tags": [
             "LMS",
